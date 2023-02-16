@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="707.0" style="-fx-background-color: #2F2B43;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-9.0" prefHeight="446.0" prefWidth="233.0" styleClass="painelMenu" stylesheets="@application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <VBox layoutX="7.0" layoutY="160.0" prefHeight="287.0" prefWidth="233.0" styleClass="painelMenu" stylesheets="@application.css">
+               <children>
+                  <Accordion prefHeight="248.0" prefWidth="233.0">
+                    <panes>
+                      <TitledPane animated="false" text="Cadastros">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Alunos" />
+                                    <Button layoutX="2.0" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Diretor(a)" />
+                                    <Button layoutY="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="240.0" text="Disciplinas" />
+                                    <Button layoutY="74.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Novo Usuário" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" text="Relatórios">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Alunos" />
+                                    <Button layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Disciplinas" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                      <TitledPane animated="false" prefHeight="234.0" prefWidth="233.0" text="Configurações">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                 <children>
+                                    <Button layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Sair" />
+                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Configurações do Sistema" />
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </VBox>
+            <Pane layoutX="7.0" layoutY="49.0" prefHeight="55.0" prefWidth="233.0" style="-fx-background-color: #68479F;">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="14.0" prefHeight="27.0" prefWidth="169.0" text="GestorEscolar v3.0" textFill="#f2f2f2">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

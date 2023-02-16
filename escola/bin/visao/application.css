@@ -1,0 +1,78 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');*/
+
+.botao{
+	
+	-fx-background-color: 	#393351;
+	-fx-background-radius:  30 0 0 30;
+	-fx-text-fill: white;
+	
+}
+
+.botao:hover{
+	
+	-fx-background-color : #2F2B43;
+	-fx-background-radius :  30 0 0 30;
+	
+	
+}
+
+.botao:pressed{
+	-fx-background-color : #2F2B43;
+	-fx-background-radius :  30 0 0 30;
+}
+
+.painelMenu{
+	-fx-background-color: 	#393351;
+	
+	
+}
+
+.painelCentro{
+	-fx-background-color:  #2F2B43;
+	
+	
+}
+
+.botao:hover{
+	-fx-font-family: 'Bebas Neue', cursive;
+ -fx-background-color: green;
+}
+
+
+/*Chamando por id */
+#btMenos{
+	-fx-font-family: 'Bebas Neue', cursive;
+	-fx-background-color: #191970;
+	
+	
+}
+
+#btMenos:hover{
+	-fx-font-family: 'Bebas Neue', cursive;
+	-fx-background-color: red;
+	
+}
+
+.contadorPos{
+	-fx-font-family: 'Bebas Neue', cursive;
+	-fx-text-fill: #4B0082;
+	
+	/*"https://fonts.googleapis.com/css2?family=Oswald";*/
+	
+	
+}
+
+.contadorNeg{
+	-fx-font-family: 'Bebas Neue', cursive;
+	-fx-text-fill: #8B0000;
+	
+}
+
+.titulo{
+	-fx-font-family: 'Bebas Neue', cursive;
+	-fx-text-fill: #800000;
+	
+}
+
+
+
