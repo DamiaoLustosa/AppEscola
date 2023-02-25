@@ -14,7 +14,8 @@ public class Main extends Application {
 			//BorderPane root = new BorderPane();
 			
 			//Parent root = FXMLLoader.load(getClass().getResource("CadastroAluno.fxml"));
-			Parent root = FXMLLoader.load(getClass().getResource("Principal.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("CadastraDisciplina.fxml"));
+			//Parent root = FXMLLoader.load(getClass().getResource("Principal.fxml"));
 			//Scene scene = new Scene(root,400,500);
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());

@@ -9,27 +9,26 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visao.CadastraDisciplinaControler">
    <children>
       <Pane prefHeight="172.0" prefWidth="600.0">
          <children>
             <Label layoutX="51.0" layoutY="35.0" prefHeight="17.0" prefWidth="45.0" text="Código:" />
-            <TextField layoutX="174.0" layoutY="31.0" prefHeight="25.0" prefWidth="136.0" />
-            <Button layoutX="428.0" layoutY="31.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Pesquisar" />
+            <TextField id="tfCodigo" fx:id="tfCodigo" layoutX="174.0" layoutY="31.0" prefHeight="25.0" prefWidth="136.0" />
+            <Button id="btPesq" fx:id="btPesq" layoutX="428.0" layoutY="31.0" mnemonicParsing="false" onAction="#pesquisar" prefHeight="25.0" prefWidth="100.0" text="Pesquisar" />
             <Label layoutX="51.0" layoutY="68.0" prefHeight="17.0" prefWidth="115.0" text="Tiítulo da Disciplina:" />
-            <TextField layoutX="174.0" layoutY="64.0" prefHeight="25.0" prefWidth="354.0" />
+            <TextField id="tfDisciplina" fx:id="tfDisciplina" layoutX="174.0" layoutY="64.0" prefHeight="25.0" prefWidth="354.0" />
             <Label layoutX="53.0" layoutY="103.0" prefHeight="17.0" prefWidth="87.0" text="CH Semanal:" />
-            <TextField layoutX="174.0" layoutY="99.0" prefHeight="25.0" prefWidth="136.0" />
+            <TextField id="tfChSemanal" fx:id="tfChSemanal" layoutX="174.0" layoutY="99.0" prefHeight="25.0" prefWidth="136.0" />
             <Label layoutX="358.0" layoutY="103.0" prefHeight="17.0" prefWidth="61.0" text="CH Anual:" />
-            <TextField layoutX="428.0" layoutY="99.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField id="tfChAnual" fx:id="tfChAnual" layoutX="428.0" layoutY="99.0" prefHeight="25.0" prefWidth="100.0" />
             <Label layoutX="53.0" layoutY="137.0" prefHeight="17.0" prefWidth="87.0" text="Data Cadastro:" />
-            <DatePicker layoutX="174.0" layoutY="133.0" prefHeight="25.0" prefWidth="136.0" />
+            <DatePicker id="dpDtCadastro" fx:id="dpDtCadastro" layoutX="174.0" layoutY="133.0" prefHeight="25.0" prefWidth="136.0" />
          </children>
       </Pane>
       <Pane prefHeight="245.0" prefWidth="600.0">
          <children>
-            <TableView layoutX="47.0" layoutY="14.0" prefHeight="120.0" prefWidth="483.0">
+            <TableView id="jtTabDisc" fx:id="jtTabDisc" layoutX="47.0" layoutY="14.0" prefHeight="120.0" prefWidth="483.0">
               <columns>
                 <TableColumn prefWidth="51.0" text="Código" />
                 <TableColumn prefWidth="142.0" text="Título" />
@@ -38,10 +37,10 @@
                   <TableColumn prefWidth="129.0" text="Data Cadast." />
               </columns>
             </TableView>
-            <Button layoutX="47.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Excluir" />
-            <Button layoutX="137.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Alterar" />
-            <Button layoutX="227.0" layoutY="169.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" text="Limpar" />
-            <Button layoutX="430.0" layoutY="165.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="100.0" text="SALVAR" />
+            <Button id="btExcluir" fx:id="btExcluir" layoutX="47.0" layoutY="169.0" mnemonicParsing="false" onAction="#excluir" prefHeight="25.0" prefWidth="72.0" text="Excluir" />
+            <Button id="btAlterar" fx:id="btAlterar" layoutX="137.0" layoutY="169.0" mnemonicParsing="false" onAction="#alterar" prefHeight="25.0" prefWidth="72.0" text="Alterar" />
+            <Button id="btLimpar" fx:id="btLimpar" layoutX="227.0" layoutY="169.0" mnemonicParsing="false" onAction="#limpar" prefHeight="25.0" prefWidth="72.0" text="Limpar" />
+            <Button id="btSalvar" fx:id="btSalvar" layoutX="430.0" layoutY="165.0" mnemonicParsing="false" onAction="#salvar" prefHeight="33.0" prefWidth="100.0" text="SALVAR" />
          </children>
       </Pane>
    </children>
