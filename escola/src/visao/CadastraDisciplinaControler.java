@@ -18,8 +18,6 @@ public class CadastraDisciplinaControler{
 	@FXML
 	TextField tfCodigo = new TextField();
 	
-	
-	
 	@FXML
 	TextField tfDisciplina = new TextField();
 	
@@ -67,6 +65,7 @@ public class CadastraDisciplinaControler{
 	}
 
 	
+	
 	//Métodos de ações
 	public void pesquisar() {
 		//System.out.println("Pesquisando...");
@@ -100,27 +99,24 @@ public class CadastraDisciplinaControler{
 		}
 		
 		
-		tfCodigo.setText("aLTERANDO COD");
-		tfDisciplina.setText("ALTERANDO DISIC");
+		
 	}
 	
 	public void limpar() {
-		tfCodigo.setText("");
-		tfDisciplina.setText("");
+		//tfCodigo.setText("");
+		//tfDisciplina.setText("");
+		limpaTela();
 	}
 	
 	public void salvar() {
-		String tituloDisci = tfDisciplina.getText();
-		String chHorariaSemanal = tfChSemanal.getText();
-		String chHorariaAnual = tfChAnual.getText();
+		String tituloDisci = tfDisciplina.getText().toUpperCase();
+		String chHorariaSemanal = tfChSemanal.getText().toUpperCase();
+		String chHorariaAnual = tfChAnual.getText().toUpperCase();
 		LocalDate dataInclusao = dpDtCadastro.getValue();	//Nova API de datas
 		
 		java.sql.Date dataSql = java.sql.Date.valueOf(dataInclusao); // converte de LocalDate para java.sql.Date
 		
-		
-				
 		String inserir = "INSERT INTO disciplina (titulo, chSemanal, chAnual, dataCadastro) VALUES (?, ?, ?, ?)";
-		
 		
 		try {
 			Connection con = FabricaConexao.getConexao();	
@@ -131,20 +127,33 @@ public class CadastraDisciplinaControler{
 			stm.setDate(4, dataSql );
 			
 			stm.execute();
+			limpaTela();
 			
-			//System.out.println("Conexão realizada com sucesso");
 			con.close();
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		
-		
-		
 	}
 	
-	
-	
-	
-	
+	public void limpaTela() {
+		
+		tfCodigo.setText("");
+		tfDisciplina.setText("");
+		tfChSemanal.setText("");		
+		tfChAnual.setText("");
+		dpDtCadastro.getEditor().setText("");	//Limpa o texto do editor do DatePicker
+		
+		/*
+		 * Código para desabilitar os componentes da tela
+		tfCodigo.setDisable(true);
+		tfDisciplina.setDisable(true);
+		tfChSemanal.setDisable(true);
+		tfChAnual.setDisable(true);
+		dpDtCadastro.setDisable(true);
+		*/
+		
+	}
+		
 }

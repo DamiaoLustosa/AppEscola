@@ -21,7 +21,7 @@ public class Main extends Application {
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			//primaryStage.setOpacity(0.50);
 			//primaryStage.setTitle("Cadastro de Alunos...");
-			primaryStage.setResizable(true);
+			//primaryStage.setResizable(true);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {
