@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="707.0" style="-fx-background-color: #2F2B43;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="446.0" prefWidth="707.0" style="-fx-background-color: #2F2B43;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="visao.PrincipalController">
    <children>
       <AnchorPane layoutX="-9.0" prefHeight="446.0" prefWidth="233.0" styleClass="painelMenu" stylesheets="@application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -21,10 +21,10 @@
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Alunos" />
-                                    <Button layoutX="2.0" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Diretor(a)" />
-                                    <Button layoutY="50.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="240.0" text="Disciplinas" />
-                                    <Button layoutY="74.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Novo Usuário" />
+                                    <Button id="btAlunos" fx:id="btAlunos" mnemonicParsing="false" onAction="#exibeTelaCadAluno" prefHeight="25.0" prefWidth="233.0" text="Alunos" />
+                                    <Button id="btDiretor" fx:id="btDiretor" layoutX="2.0" layoutY="25.0" mnemonicParsing="false" onAction="#exibeTelaCadDiretor" prefHeight="25.0" prefWidth="233.0" text="Diretor(a)" />
+                                    <Button id="btDisciplina" fx:id="btDisciplina" layoutY="50.0" mnemonicParsing="false" onAction="#exibeTelaCadDisciplina" prefHeight="25.0" prefWidth="240.0" text="Disciplinas" />
+                                    <Button id="btNovoUsuario" fx:id="btNovoUsuario" layoutY="74.0" mnemonicParsing="false" onAction="#exibeTelaCadUsuario" prefHeight="25.0" prefWidth="233.0" text="Novo Usuário" />
                                  </children>
                               </AnchorPane>
                         </content>
@@ -33,8 +33,8 @@
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Alunos" />
-                                    <Button layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Disciplinas" />
+                                    <Button id="btRelAlunos" fx:id="btRelAlunos" mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Alunos" />
+                                    <Button id="btRelDisciplinas" fx:id="btRelDisciplinas" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Disciplinas" />
                                  </children>
                               </AnchorPane>
                         </content>
@@ -43,8 +43,8 @@
                         <content>
                           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                                  <children>
-                                    <Button layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Sair" />
-                                    <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Configurações do Sistema" />
+                                    <Button id="btConfigSair" fx:id="btConfigSair" layoutY="25.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Sair" />
+                                    <Button id="btConfigSistem" fx:id="btConfigSistem" mnemonicParsing="false" prefHeight="25.0" prefWidth="233.0" text="Configurações do Sistema" />
                                  </children>
                               </AnchorPane>
                         </content>

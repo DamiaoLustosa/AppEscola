@@ -8,6 +8,7 @@ import java.time.LocalDate;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import model.FabricaConexao;
@@ -40,13 +41,31 @@ public class CadastraDisciplinaControler{
 	Button btAlterar = new Button();
 
 	@FXML
-	Button btLimpar = new Button();
+	Button btNovo = new Button();
 	
 	@FXML
 	Button btSalvar = new Button();
 	
 	@FXML
 	TableView<String> jtTabDisc = new TableView<String>();
+	
+	@FXML
+	TableColumn<String, String> tcCod = new TableColumn<>();
+	
+	@FXML
+	TableColumn<String, String> tcTitulo = new TableColumn<>();
+	
+	@FXML
+	TableColumn<String, String> tcChSemanal = new TableColumn<>();
+	
+	@FXML
+	TableColumn<String, String> tcChAnual = new TableColumn<>();
+	
+	@FXML
+	TableColumn<String, String> tcDatCad = new TableColumn<>();
+	
+	
+	
 
 	public TextField getTfCodigo() {
 		return tfCodigo;
@@ -102,7 +121,7 @@ public class CadastraDisciplinaControler{
 		
 	}
 	
-	public void limpar() {
+	public void insereNovo() {
 		//tfCodigo.setText("");
 		//tfDisciplina.setText("");
 		limpaTela();

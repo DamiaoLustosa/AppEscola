@@ -39,7 +39,7 @@
             </TableView>
             <Button id="btExcluir" fx:id="btExcluir" layoutX="47.0" layoutY="169.0" mnemonicParsing="false" onAction="#excluir" prefHeight="25.0" prefWidth="72.0" text="Excluir" />
             <Button id="btAlterar" fx:id="btAlterar" layoutX="137.0" layoutY="169.0" mnemonicParsing="false" onAction="#alterar" prefHeight="25.0" prefWidth="72.0" text="Alterar" />
-            <Button id="btLimpar" fx:id="btLimpar" layoutX="227.0" layoutY="169.0" mnemonicParsing="false" onAction="#limpar" prefHeight="25.0" prefWidth="72.0" text="Limpar" />
+            <Button id="btNovo" fx:id="btNovo" layoutX="227.0" layoutY="169.0" mnemonicParsing="false" onAction="#insereNovo" prefHeight="25.0" prefWidth="72.0" text="Novo" />
             <Button id="btSalvar" fx:id="btSalvar" layoutX="430.0" layoutY="165.0" mnemonicParsing="false" onAction="#salvar" prefHeight="33.0" prefWidth="100.0" text="SALVAR" />
          </children>
       </Pane>

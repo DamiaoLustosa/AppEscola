@@ -13,15 +13,14 @@ public class Main extends Application {
 		try {
 			//BorderPane root = new BorderPane();
 			
-			//Parent root = FXMLLoader.load(getClass().getResource("CadastroAluno.fxml"));
-			Parent root = FXMLLoader.load(getClass().getResource("CadastraDisciplina.fxml"));
-			//Parent root = FXMLLoader.load(getClass().getResource("Principal.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("Principal.fxml"));
 			//Scene scene = new Scene(root,400,500);
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			//primaryStage.setOpacity(0.50);
-			//primaryStage.setTitle("Cadastro de Alunos...");
-			//primaryStage.setResizable(true);
+			primaryStage.setTitle("SySchool v. 0.1 - Ambiente de Teste");
+			primaryStage.setResizable(true);
+			primaryStage.setMaximized(true);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {

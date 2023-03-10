@@ -11,23 +11,22 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <AnchorPane prefHeight="202.0" prefWidth="632.0" VBox.vgrow="ALWAYS">
          <children>
             <Label layoutX="48.0" layoutY="45.0" prefHeight="17.0" prefWidth="53.0" text="Código:" />
-            <TextField layoutX="101.0" layoutY="41.0" prefHeight="25.0" prefWidth="113.0" />
+            <TextField id="tfCodigo" fx:id="tfCodigo" layoutX="101.0" layoutY="41.0" prefHeight="25.0" prefWidth="113.0" />
             <Label layoutX="48.0" layoutY="81.0" prefHeight="17.0" prefWidth="42.0" text="Nome:" />
-            <TextField layoutX="101.0" layoutY="77.0" prefHeight="25.0" prefWidth="380.0" />
-            <Button layoutX="491.0" layoutY="77.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Pesquisar" />
+            <TextField id="tfNomeDiretor" fx:id="tfNomeDiretor" layoutX="101.0" layoutY="77.0" prefHeight="25.0" prefWidth="380.0" />
+            <Button id="btPesqDiretor" fx:id="btPesqDiretor" layoutX="491.0" layoutY="77.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Pesquisar" />
             <Label layoutX="48.0" layoutY="117.0" prefHeight="17.0" prefWidth="32.0" text="CPF:" />
-            <TextField layoutX="101.0" layoutY="113.0" prefHeight="25.0" prefWidth="198.0" />
+            <TextField id="tfCpf" fx:id="tfCpf" layoutX="101.0" layoutY="113.0" prefHeight="25.0" prefWidth="198.0" />
             <Label layoutX="363.0" layoutY="117.0" prefHeight="17.0" prefWidth="86.0" text="Data Cadastro:" />
-            <DatePicker layoutX="451.0" layoutY="113.0" prefHeight="25.0" prefWidth="134.0" />
+            <DatePicker id="dpDatCad" fx:id="dpDatCad" layoutX="451.0" layoutY="113.0" prefHeight="25.0" prefWidth="134.0" />
             <Label layoutX="48.0" layoutY="152.0" prefHeight="17.0" prefWidth="94.0" text="Situação Atual:" />
-            <RadioButton layoutX="138.0" layoutY="152.0" mnemonicParsing="false" text="Ativo" />
-            <RadioButton layoutX="206.0" layoutY="152.0" mnemonicParsing="false" text="Inativo" />
+            <RadioButton id="rbAtivo" fx:id="rbAtivo" layoutX="138.0" layoutY="152.0" mnemonicParsing="false" text="Ativo" />
+            <RadioButton id="rbInativo" fx:id="rbInativo" layoutX="206.0" layoutY="152.0" mnemonicParsing="false" text="Inativo" />
          </children>
          <padding>
             <Insets right="5.0" top="5.0" />
@@ -35,18 +34,18 @@
       </AnchorPane>
       <AnchorPane prefHeight="215.0" prefWidth="637.0" VBox.vgrow="ALWAYS">
          <children>
-            <TableView layoutX="48.0" layoutY="23.0" prefHeight="117.0" prefWidth="538.0">
+            <TableView id="tvTabDiretor" fx:id="tvTabDiretor" layoutX="48.0" layoutY="23.0" prefHeight="117.0" prefWidth="538.0">
               <columns>
-                <TableColumn prefWidth="49.0" text="Código" />
-                <TableColumn prefWidth="282.0" text="Nome" />
-                  <TableColumn prefWidth="111.0" text="CPF" />
-                  <TableColumn prefWidth="92.0" text="Data Cadastro" />
+                <TableColumn fx:id="tcCodigo" prefWidth="49.0" text="Código" />
+                <TableColumn fx:id="tcNome" prefWidth="282.0" text="Nome" />
+                  <TableColumn fx:id="tcCpf" prefWidth="111.0" text="CPF" />
+                  <TableColumn fx:id="tcDtCad" prefWidth="92.0" text="Data Cadastro" />
               </columns>
             </TableView>
-            <Button layoutX="49.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Excluir" />
-            <Button layoutX="146.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Alterar" />
-            <Button layoutX="247.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Limpar" />
-            <Button layoutX="473.0" layoutY="161.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="113.0" text="SALVAR" />
+            <Button id="btExcluirDiretor" fx:id="btExcluirDiretor" layoutX="49.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Excluir" />
+            <Button id="btAlterarDiretor" fx:id="btAlterarDiretor" layoutX="146.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Alterar" />
+            <Button id="btNovoDiretor" fx:id="btNovoDiretor" layoutX="247.0" layoutY="164.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="78.0" text="Novo" />
+            <Button id="btSalvarDiretor" fx:id="btSalvarDiretor" layoutX="473.0" layoutY="161.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="113.0" text="SALVAR" />
          </children>
          <padding>
             <Insets bottom="5.0" right="5.0" />
